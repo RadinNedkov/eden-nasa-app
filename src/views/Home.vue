@@ -7,7 +7,9 @@
 <script lang="ts">
 import Vue from 'vue';
 
-export default Vue.extend({
+const Home = Vue.extend({
   name: 'Home',
 });
+
+export default Home;
 </script>

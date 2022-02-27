@@ -18,8 +18,8 @@
             </div>
             <nav class="hidden md:flex space-x-10">
                 <router-link to="/about" class="text-base font-medium text-gray-500 hover:text-gray-900"> APoTD </router-link>
-                <router-link to="/about" class="text-base font-medium text-gray-500 hover:text-gray-900"> Pricing </router-link>
-                <router-link to="/about" class="text-base font-medium text-gray-500 hover:text-gray-900"> Docs </router-link>
+                <router-link to="/about" class="text-base font-medium text-gray-500 hover:text-gray-900"> Earth </router-link>
+                <router-link to="/about" class="text-base font-medium text-gray-500 hover:text-gray-900"> EPIC </router-link>
             </nav>
             <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                 <router-link to="/" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"> Sign in </router-link>
@@ -49,15 +49,15 @@
                         <nav class="grid gap-y-8">
 
                             <router-link to="/" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
-                                <span class="ml-3 text-base font-medium text-gray-900"> Security </span>
+                                <span class="ml-3 text-base font-medium text-gray-900"> APoTD </span>
                             </router-link>
 
                             <router-link to="/" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
-                                <span class="ml-3 text-base font-medium text-gray-900"> Integrations </span>
+                                <span class="ml-3 text-base font-medium text-gray-900"> Earth </span>
                             </router-link>
 
                             <router-link to="/" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
-                                <span class="ml-3 text-base font-medium text-gray-900"> Automations </span>
+                                <span class="ml-3 text-base font-medium text-gray-900"> EPIC </span>
                             </router-link>
                         </nav>
                     </div>
@@ -66,7 +66,7 @@
                     <div>
                         <router-link to="/" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"> Sign up </router-link>
                         <p class="mt-6 text-center text-base font-medium text-gray-500">
-                            Existing customer?
+                            Already registered?
                             <router-link to="/about" class="text-indigo-600 hover:text-indigo-500"> Sign in </router-link>
                         </p>
                     </div>
