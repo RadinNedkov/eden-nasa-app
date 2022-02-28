@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Eden Application APP</h1>
+    <h1 class="text-center mt-8" v-if="!$auth.loading">Eden Application APP</h1>
   </div>
 </template>
 
