@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import Home from '../views/Home.vue'
 import Profile from '../views/Profile.vue'
+import APOD from '../views/APOD.vue'
 
 import { authGuard } from "../auth/authGuard";
 
@@ -18,6 +19,11 @@ const routes: Array<RouteConfig> = [
     name: 'Profile',
     component: Profile,
     beforeEnter: authGuard
+  },
+  {
+    path: '/apod',
+    name: 'Astronomy picture of the day',
+    component: APOD
   },
   {
     path: '/*',

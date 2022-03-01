@@ -3,11 +3,15 @@ import App from './App.vue'
 import './resources/css/public.css'
 import router from './router'
 import store from './store'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 const authData = require('../auth_config.json')
 const domain = authData.domain
 const clientId = authData.clientId
 import { Auth0Plugin } from "./auth/index.js"
+
+Vue.use(VueAxios, axios)
 
 Vue.use(Auth0Plugin, {
   domain,

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-2/3 xl:w-2/4 mx-auto mt-12">
+  <div class="w-2/3 lg:w-2/4 mx-auto mt-12">
     <div>
       <img :src="$auth.user.picture">
       <h2>Name: {{ $auth.user.name }}</h2>
