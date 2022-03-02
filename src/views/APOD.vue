@@ -18,13 +18,12 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { NASA_URL } from '../resources/constants'
+import { NASA_URL, API_KEY } from '../resources/constants'
 import Datepicker from "vuejs-datepicker";
 
 const APOD = Vue.extend({
     data() {
         return {
-            apiKey: 'api_key=DSkVsLRAEdMjcfO78LWBbbv8kKdH97wIEdOilQfe',
             data: {},
             newDate: '',
             error: 'No results for the given date.'
@@ -35,7 +34,7 @@ const APOD = Vue.extend({
     },
     methods: {
         getPictureOfTheDay(value: any) {
-            this.$http.get(NASA_URL + '/planetary/apod?' + this.apiKey + '&date=' + this.newDate)
+            this.$http.get(NASA_URL + '/planetary/apod?' + API_KEY + '&date=' + this.newDate)
             .then((response) => {
                 this.data = response.data
             });

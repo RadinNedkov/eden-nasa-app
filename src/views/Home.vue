@@ -9,7 +9,6 @@
 import Vue from 'vue';
 
 const Home = Vue.extend({
-  name: 'Home',
 });
 
 export default Home;
