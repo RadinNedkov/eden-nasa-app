@@ -1,8 +1,8 @@
 <template>
-    <div class="w-2/3 lg:w-2/4 mx-auto mt-8 text-center mb-12">
+    <div class="w-5/6 lg:w-2/4 mx-auto mt-8 lg:text-center mb-12">
         <div class="text-lg">
             <p class="inline-block">Astronomy Picture of </p>
-            <Datepicker class="ml-1 w-1/6 inline-block" 
+            <Datepicker class="lg:ml-1 lg:w-1/6 inline-block" 
             placeholder="Select Date" 
             v-model="newDate" 
             :format="'yyyy-MM-dd'" />
@@ -46,9 +46,8 @@ const APOD = Vue.extend({
     },
     watch: {
         'newDate'(newValue) {
-            let convertedDate = new Date(newValue).toISOString().slice(0, 10);
-            this.newDate = convertedDate;
-            this.getPictureOfTheDay(convertedDate);
+            this.newDate = new Date(newValue).toISOString().slice(0, 10);
+            this.getPictureOfTheDay(newValue);
         }
     },
     components: {
