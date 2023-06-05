@@ -1,4 +1,5 @@
 # eden-application-app
+# Responsive SPA with Vue.js in TypesScript, TailwindCSS, also integrated with NASA API, Firebase.
 
 ## Project setup
 ```
